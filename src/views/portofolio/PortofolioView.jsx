@@ -1,10 +1,11 @@
-import './portofolio.css';
-import Menu from './Menu';
-import { useState } from 'react';
-import { Fade, Slide, Bounce } from 'react-awesome-reveal';
+import "./portofolio.css";
+import Menu from "./Menu";
+import { useState } from "react";
+import { Zoom } from "react-awesome-reveal";
 
 const PortofolioView = () => {
   const [items, setItems] = useState(Menu);
+  const [activeCategory, setActiveCategory] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 5; // Number of items to display per page
 
@@ -14,6 +15,7 @@ const PortofolioView = () => {
     });
     setItems(updateItems);
     setCurrentPage(1); // Reset to the first page when filtering
+    setActiveCategory("All");
   };
 
   // Calculate the indices for the current page items
@@ -30,42 +32,51 @@ const PortofolioView = () => {
 
   return (
     <section id="porto" className="work container section">
-      <Fade>
+      <div>
         <h2 className="section_title">Recent Works</h2>
-      </Fade>
+      </div>
 
       <div className="work_filters">
-        <Slide>
+        <div>
           <span
-            className="work_item"
+            className={`work_item ${
+              activeCategory === "All" ? "active_tab" : ""
+            }`}
             onClick={() => {
               setItems(Menu);
               setCurrentPage(1);
+              setActiveCategory("All");
             }}
           >
-            Everything
+            All
           </span>
-        </Slide>
-        <Slide>
-          <span className="work_item" onClick={() => filterItem('Data Analyst')}>
-            Data Analyst
-          </span>
-        </Slide>
-        <Slide>
-          <span className="work_item" onClick={() => filterItem('Web Development')}>
+        </div>
+        <div>
+          <span
+            className={`work_item ${
+              activeCategory === "Web Development" ? "active_tab" : ""
+            }`}
+            onClick={() => {
+              filterItem("Web Development");
+              setActiveCategory("Web Development");
+            }}
+          >
             Web Development
           </span>
-        </Slide>
-        <Slide>
-          <span className="work_item" onClick={() => filterItem('Database Administrator')}>
-            Database Administrator
-          </span>
-        </Slide>
-        <Slide>
-          <span className="work_item" onClick={() => filterItem('Mobile Application')}>
+        </div>
+        <div>
+          <span
+            className={`work_item ${
+              activeCategory === "Mobile Application" ? "active_tab" : ""
+            }`}
+            onClick={() => {
+              filterItem("Mobile Application");
+              setActiveCategory("Mobile Application");
+            }}
+          >
             Mobile Application
           </span>
-        </Slide>
+        </div>
       </div>
 
       <div className="work_container grid">
@@ -73,12 +84,12 @@ const PortofolioView = () => {
           const { id, image, title, category, link } = elem;
           return (
             <div className="work_card" key={id}>
-              <Bounce>
+              <Zoom>
                 <div className="work_thumbnail">
                   <img src={image} alt="" className="work_img" />
                   <div className="work_mask"></div>
                 </div>
-              </Bounce>
+              </Zoom>
               <span className="work_category">{category}</span>
               <h3 className="work_title">{title}</h3>
               <a href={link} className="work_button">
@@ -91,7 +102,13 @@ const PortofolioView = () => {
 
       <div className="pagination">
         {Array.from({ length: totalPages }, (_, index) => (
-          <button key={index + 1} onClick={() => handlePageChange(index + 1)} className={`pagination_button ${currentPage === index + 1 ? 'active' : ''}`}>
+          <button
+            key={index + 1}
+            onClick={() => handlePageChange(index + 1)}
+            className={`pagination_button ${
+              currentPage === index + 1 ? "active" : ""
+            }`}
+          >
             {index + 1}
           </button>
         ))}

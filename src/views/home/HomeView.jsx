@@ -8,7 +8,6 @@ import AboutView from '../about/AboutView';
 import AbilityView from '../ability/AbilityView';
 import ResumeView from '../resume/ResumeView';
 import PortofolioView from '../portofolio/PortofolioView';
-import ContactView from '../contact/ContactView';
 import { Fade, Slide } from 'react-awesome-reveal';
 
 const HomeView = () => {
@@ -20,12 +19,12 @@ const HomeView = () => {
             <div className="profil-lingkaran">
               <img src={Profil} alt="" className="home_img" />
             </div>
-            <h1 className="home_name">Moh. Iqbal Fatoni</h1>
-            <span className="home_education">Frontend Web Developer</span>
+            <h1 className="home_name">Muhammad Alauddin Azhary</h1>
+            <span className="home_education">Software Engineer</span>
             <SocialView />
           </Fade>
           <Slide>
-            <AnchorLink href="#contact" className="button">
+            <AnchorLink href="#" className="button">
               Hire Me
             </AnchorLink>
           </Slide>
@@ -37,7 +36,6 @@ const HomeView = () => {
       <AbilityView />
       <ResumeView />
       <PortofolioView />
-      <ContactView />
     </>
   );
 };

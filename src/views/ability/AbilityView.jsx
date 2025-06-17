@@ -8,8 +8,8 @@ const data = [
   {
     id: 1,
     image: Image1,
-    title: 'Data Analyst',
-    description: 'Analyze data with the goal of generating useful business insights. Work with data from various sources such as databases, spreadsheet files, or streaming data.',
+    title: 'Android Development',
+    description: 'Develop Android applications using Java or Kotlin. This includes designing user interfaces, implementing features, and ensuring app performance and security.',
   },
   {
     id: 2,
@@ -28,9 +28,9 @@ const data = [
 const AbilityView = () => {
   return (
     <section id="ability" className="ability container section">
-      <Fade>
+      <div>
         <h2 className="section_title">Ability</h2>
-      </Fade>
+      </div>
 
       <div className="ability_container grid">
         {data.map(({ id, image, title, description }) => {

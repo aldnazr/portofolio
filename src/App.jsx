@@ -31,23 +31,6 @@ function App() {
         </Row>
       </Container>
     </BrowserRouter>
-    // <>
-    //   <BrowserRouter>
-    //     <Routes>
-    //       <Route path="/" element={<SidebarComponent />}>
-    //         <Route index element={<HomeView />} />
-    //         <Route path="about" element={<AboutView />} />
-    //         <Route path="portofolio" element={<PortofolioView />} />
-    //         <Route path="resume" element={<ResumeView />} />
-    //         <Route path="services" element={<ServicesView />} />
-    //         <Route path="blog" element={<BlogView />} />
-    //         <Route path="contact" element={<ContactView />} />
-    //         <Route path="testimonials" element={<TestimonialsView />} />
-    //         <Route path="pricing" element={<PricingView />} />
-    //       </Route>
-    //     </Routes>
-    //   </BrowserRouter>
-    // </>
   );
 }
 

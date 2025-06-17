@@ -6,9 +6,9 @@ import { Fade } from 'react-awesome-reveal';
 const ResumeView = () => {
   return (
     <section id="resume" className="resume container section">
-      <Fade>
+      <div>
         <h2 className="section_title">Experience</h2>
-      </Fade>
+      </div>
 
       <div className="resume_container grid">
         <div className="timeline grid">

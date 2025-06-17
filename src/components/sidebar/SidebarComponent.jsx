@@ -43,11 +43,6 @@ const SidebarComponent = () => {
                   <i className="icon-layers"></i>
                 </AnchorLink>
               </li>
-              <li className="nav_item">
-                <AnchorLink href="#contact" className="nav_link">
-                  <i className="icon-bubble"></i>
-                </AnchorLink>
-              </li>
             </ul>
           </div>
         </nav>
