@@ -1,14 +1,14 @@
-import './home.css';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-import Profil from '../../assets/hero.jpg';
-import SocialView from './SocialView';
-import ScrollDown from './ScrollDown';
-import ShapesComponent from '../../components/shapes/ShapesComponent';
-import AboutView from '../about/AboutView';
-import AbilityView from '../ability/AbilityView';
-import ResumeView from '../resume/ResumeView';
-import PortofolioView from '../portofolio/PortofolioView';
-import { Fade, Slide } from 'react-awesome-reveal';
+import "./home.css";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import Profil from "../../assets/hero.jpg";
+import SocialView from "./SocialView";
+import ScrollDown from "./ScrollDown";
+import ShapesComponent from "../../components/shapes/ShapesComponent";
+import AboutView from "../about/AboutView";
+import AbilityView from "../ability/AbilityView";
+import ResumeView from "../resume/ResumeView";
+import PortofolioView from "../portofolio/PortofolioView";
+import { Fade, Slide } from "react-awesome-reveal";
 
 const HomeView = () => {
   return (
@@ -24,7 +24,10 @@ const HomeView = () => {
             <SocialView />
           </Fade>
           <Slide>
-            <AnchorLink href="#" className="button">
+            <AnchorLink
+              href="mailto:alauddinazhary05@gmail.com?subject=Hiring%20Opportunity&body=Hello%20Azhar%2C%20I%27d%20like%20to%20discuss%20a%20project%20with%20you."
+              className="button"
+            >
               Hire Me
             </AnchorLink>
           </Slide>
