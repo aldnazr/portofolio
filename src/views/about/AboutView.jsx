@@ -1,10 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
-import './about.css';
-import AboutBox from './AboutBox';
-import OpenLinkButtonComponent from '../../components/button/OpenLinkButtonComponent';
-import { Bounce, JackInTheBox, Slide, Fade } from 'react-awesome-reveal';
-import CV from '../../assets/cv.pdf';
-
+import "./about.css";
+import AboutBox from "./AboutBox";
+import OpenLinkButtonComponent from "../../components/button/OpenLinkButtonComponent";
+import { Slide, Fade } from "react-awesome-reveal";
+import CV from "../../assets/cv.pdf";
 
 const AboutView = () => {
   return (
@@ -18,14 +17,26 @@ const AboutView = () => {
           <div className="about_data grid">
             <Fade>
               <div className="about_info">
-                <p className="about_description">I have expertise in software development, focusing on mobile and web applications. I'm experienced in building responsive user interfaces and writing clean, maintainable code using modern frameworks like React and Flutter.</p>
-                <OpenLinkButtonComponent className="button" redirect={CV} text="Download CV" />
+                <p className="about_description">
+                  I have expertise in software development, focusing on mobile
+                  and web applications. I'm experienced in building responsive
+                  user interfaces and writing clean, maintainable code using
+                  modern frameworks like React and Flutter.
+                </p>
+                <OpenLinkButtonComponent
+                  className="button"
+                  redirect={CV}
+                  text="Download CV"
+                />
               </div>
             </Fade>
 
             <div className="about_skills grid">
               <Slide>
-                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aldnazr&card_width=450" alt="toplanguange" />
+                <img
+                  src="https://github-readme-stats.vercel.app/api/top-langs/?username=aldnazr&card_width=450"
+                  alt="toplanguange"
+                />
               </Slide>
             </div>
           </div>
