@@ -170,9 +170,9 @@
   }
 }
 
-@media screen and (max-width: 512px) {
+@media screen and (max-width: 480px) {
   .work_container {
-    grid-template-columns: 20rem;
+    grid-template-columns: 22rem;
     gap: 1rem;
     justify-content: center;
   }

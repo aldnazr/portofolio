@@ -1,5 +1,24 @@
+
+.content{
+  width: 91.6%;
+}
+
 @media screen and (max-width: 1024px) {
   .main {
     margin-left: 0;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .content{
+    width: max-content;
+  }
+}
+
+/* @media screen and (max-width: 640px) {
+  .main {
+    margin-left: 0;
+    padding: 0;
+  }
+  
+} */

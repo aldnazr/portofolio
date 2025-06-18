@@ -5,6 +5,7 @@ import HomeView from "./views/home/HomeView";
 import PortofolioView from "./views/portofolio/PortofolioView";
 import ResumeView from "./views/resume/ResumeView";
 import AbilityView from "./views/ability/AbilityView";
+import "./App.css";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         </div>
 
         {/* Content (11/12) */}
-        <div className="w-max">
+        <div className="content">
           <Routes>
             <Route path="/portofolio" element={<HomeView />} />
             <Route path="about" element={<AboutView />} />
