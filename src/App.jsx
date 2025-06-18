@@ -9,14 +9,14 @@ import AbilityView from "./views/ability/AbilityView";
 function App() {
   return (
     <BrowserRouter>
-      <div className="flex min-h-screen">
+      <div className="flex max-h-screen">
         {/* Sidebar (1/12) */}
         <div className="w-1/12">
           <SidebarComponent />
         </div>
 
         {/* Content (11/12) */}
-        <div className="w-11/12">
+        <div className="w-max">
           <Routes>
             <Route path="/portofolio" element={<HomeView />} />
             <Route path="about" element={<AboutView />} />

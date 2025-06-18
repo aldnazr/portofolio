@@ -1,17 +1,17 @@
-import { Outlet, Link } from 'react-router-dom';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-import './sidebar.css';
-import { useState } from 'react';
+import { Outlet, Link } from "react-router-dom";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import "./sidebar.css";
+import { useState } from "react";
 
 const SidebarComponent = () => {
   const [toggle, showMenu] = useState(false);
 
   return (
     <>
-      <aside className={toggle ? 'aside show-menu' : 'aside'}>
-        <AnchorLink href="#home" className="nav_logo">
+      <aside className={toggle ? "aside show-menu" : "aside"}>
+        <AnchorLink href="#" className="nav_logo">
           <h1>
-            IQ<span>.</span>
+            PF<span>.</span>
           </h1>
         </AnchorLink>
 
@@ -52,7 +52,10 @@ const SidebarComponent = () => {
         <Outlet />
       </aside>
 
-      <div className={toggle ? 'nav_toggle nav_toggle-open' : 'nav_toggle'} onClick={() => showMenu(!toggle)}>
+      <div
+        className={toggle ? "nav_toggle nav_toggle-open" : "nav_toggle"}
+        onClick={() => showMenu(!toggle)}
+      >
         <i className="icon-menu"></i>
       </div>
     </>
