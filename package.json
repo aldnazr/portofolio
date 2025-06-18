@@ -14,12 +14,11 @@
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "@formspree/react": "^2.5.1",
+    "@tailwindcss/vite": "^4.1.10",
     "axios": "^1.6.8",
-    "bootstrap": "^5.3.3",
     "react": "^18.2.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-awesome-reveal": "^4.2.12",
-    "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.0",
     "sweetalert2": "^11.10.8"
@@ -29,12 +28,15 @@
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.21",
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "gh-pages": "^6.3.0",
     "globals": "^15.1.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.10",
     "vite": "^5.4.19"
   }
 }

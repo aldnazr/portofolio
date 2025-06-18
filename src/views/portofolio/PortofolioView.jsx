@@ -7,7 +7,7 @@ const PortofolioView = () => {
   const [items, setItems] = useState(Menu);
   const [activeCategory, setActiveCategory] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 5; // Number of items to display per page
+  const itemsPerPage = 6; // Number of items to display per page
 
   const filterItem = (categoryItem) => {
     const updateItems = Menu.filter((curElem) => {
@@ -100,7 +100,7 @@ const PortofolioView = () => {
         })}
       </div>
 
-      <div className="pagination">
+      <div className="flex justify-center md:mt-[0px] mt-[40px]">
         {Array.from({ length: totalPages }, (_, index) => (
           <button
             key={index + 1}

@@ -1,7 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Container, Row, Col } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
-// import './App.css';
 import SidebarComponent from "./components/sidebar/SidebarComponent";
 import AboutView from "./views/about/AboutView";
 import HomeView from "./views/home/HomeView";
@@ -12,22 +9,23 @@ import AbilityView from "./views/ability/AbilityView";
 function App() {
   return (
     <BrowserRouter>
-      <Container fluid>
-        <Row>
-          <Col sm={1}>
-            <SidebarComponent />
-          </Col>
-          <Col sm={11}>
-            <Routes>
-              <Route path="/portofolio" element={<HomeView />} />
-              <Route path="about" element={<AboutView />} />
-              <Route path="porto" element={<PortofolioView />} />
-              <Route path="resume" element={<ResumeView />} />
-              <Route path="ability" element={<AbilityView />} />
-            </Routes>
-          </Col>
-        </Row>
-      </Container>
+      <div className="flex min-h-screen">
+        {/* Sidebar (1/12) */}
+        <div className="w-1/12">
+          <SidebarComponent />
+        </div>
+
+        {/* Content (11/12) */}
+        <div className="w-11/12">
+          <Routes>
+            <Route path="/portofolio" element={<HomeView />} />
+            <Route path="about" element={<AboutView />} />
+            <Route path="porto" element={<PortofolioView />} />
+            <Route path="resume" element={<ResumeView />} />
+            <Route path="ability" element={<AbilityView />} />
+          </Routes>
+        </div>
+      </div>
     </BrowserRouter>
   );
 }
