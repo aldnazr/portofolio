@@ -1,9 +1,9 @@
 .sidebar {
-  width: calc(100vw/12);
+  width: calc(100vw / 12);
 }
 
 .content{
-  width: 100%;
+  width: calc(100vw * 11 / 12);
 }
 
 /* @media screen and (max-width: 1024px) {
@@ -12,12 +12,12 @@
   }
 } */
 
-@media screen and (max-width: 512px) {
+@media screen and (max-width: 1200px) {
   .sidebar {
     width: 0;
   }
   .content{
-    width: max-content;
+    width: 100vw;
   }
 }
 
