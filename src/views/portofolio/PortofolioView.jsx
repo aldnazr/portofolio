@@ -37,46 +37,40 @@ const PortofolioView = () => {
       </div>
 
       <div className="work_filters">
-        <div>
-          <span
-            className={`work_item ${
-              activeCategory === "All" ? "active_tab" : ""
-            }`}
-            onClick={() => {
-              setItems(Menu);
-              setCurrentPage(1);
-              setActiveCategory("All");
-            }}
-          >
-            All
-          </span>
-        </div>
-        <div>
-          <span
-            className={`work_item ${
-              activeCategory === "Web Development" ? "active_tab" : ""
-            }`}
-            onClick={() => {
-              filterItem("Web Development");
-              setActiveCategory("Web Development");
-            }}
-          >
-            Web Development
-          </span>
-        </div>
-        <div>
-          <span
-            className={`work_item ${
-              activeCategory === "Mobile Application" ? "active_tab" : ""
-            }`}
-            onClick={() => {
-              filterItem("Mobile Application");
-              setActiveCategory("Mobile Application");
-            }}
-          >
-            Mobile Application
-          </span>
-        </div>
+        <span
+          className={`work_item ${
+            activeCategory === "All" ? "active_tab" : ""
+          }`}
+          onClick={() => {
+            setItems(Menu);
+            setCurrentPage(1);
+            setActiveCategory("All");
+          }}
+        >
+          All
+        </span>
+        <span
+          className={`work_item ${
+            activeCategory === "Web Development" ? "active_tab" : ""
+          }`}
+          onClick={() => {
+            filterItem("Web Development");
+            setActiveCategory("Web Development");
+          }}
+        >
+          Web Development
+        </span>
+        <span
+          className={`work_item ${
+            activeCategory === "Mobile Application" ? "active_tab" : ""
+          }`}
+          onClick={() => {
+            filterItem("Mobile Application");
+            setActiveCategory("Mobile Application");
+          }}
+        >
+          Mobile Application
+        </span>
       </div>
 
       <div className="work_container grid">
