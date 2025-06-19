@@ -2,16 +2,19 @@
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  column-gap: 10px;
+  overflow-x: auto;
+  gap: 10px;
   margin-bottom: 2.5rem;
   scrollbar-width: thin;
 }
 
 .work_item {
+  flex-shrink: 0;
+  white-space: nowrap;
   cursor: pointer;
   font-weight: var(--font-medium);
   transition: background-color 0.3s, color 0.3s;
-  background-color: #2563eb; /* biru sedang (seperti Tailwind 'blue-600') */
+  background-color: #2563eb;
   border-radius: 18px;
   padding: 6px 16px;
   min-width: 70px;
@@ -21,8 +24,8 @@
 }
 
 .work_item:hover {
-  background-color: #1e40af; /* biru lebih gelap (blue-800) */
-  color: #e0f2fe; /* biru muda (light cyan/blue-100) */
+  background-color: #1e40af;
+  color: #e0f2fe;
 }
 
 .active_tab {
