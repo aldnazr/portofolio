@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>
       <div className="flex max-h-screen">
         {/* Sidebar (1/12) */}
-        <div className="w-1/12">
+        <div className="sidebar">
           <SidebarComponent />
         </div>
 
