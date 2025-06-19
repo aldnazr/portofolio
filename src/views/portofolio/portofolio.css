@@ -1,9 +1,10 @@
 .work_filters {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   column-gap: 10px;
   margin-bottom: 2.5rem;
+  scrollbar-width: thin;
 }
 
 .work_item {
@@ -170,9 +171,9 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
   .work_container {
-    grid-template-columns: 22rem;
+    grid-template-columns: 21rem;
     gap: 1rem;
     justify-content: center;
   }
