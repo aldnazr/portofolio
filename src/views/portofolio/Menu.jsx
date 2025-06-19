@@ -61,7 +61,7 @@ const Menu = [
     image: Work6,
     title: "Web Porfolio",
     category: "Web Development",
-    link: "https://github.com/aldnazr/",
+    link: "https://github.com/aldnazr/portofolio",
   },
   {
     id: 7,
