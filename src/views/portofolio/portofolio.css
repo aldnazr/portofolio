@@ -6,19 +6,19 @@
   gap: 0.6rem;
   margin-bottom: 2.5rem;
   scrollbar-width: thin;
-  max-width: 90vw; /* ini penting */
+  max-width: max-content;
 }
 
 .work_item {
   flex-shrink: 0;
   white-space: nowrap;
   cursor: pointer;
-  font-weight: var(--font-medium);
+  font-size: medium;
+  font-weight: 500;
   transition: background-color 0.3s, color 0.3s;
   background-color: #2563eb;
-  border-radius: 18px;
+  border-radius: 20px;
   padding: 6px 16px;
-  min-width: 70px;
   color: white;
   display: inline-block;
   text-align: center;
@@ -43,7 +43,7 @@
 .work_card {
   position: relative;
   overflow: hidden;
-  border-radius: var(--border-radius);
+  border-radius: 18px;
   box-shadow: var(--shadow);
 }
 
@@ -167,19 +167,43 @@
     justify-content: center;
   }
 
+  .work_item {
+    font-size: small;
+    font-weight: 600;
+  }
   .work_filters {
-    gap: 0.3rem;
+    gap: 0.6rem;
   }
 
   .work_card {
-    border-radius: 12px;
+    border-radius: 14px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .work_container {
     grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
-    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .work_item {
+    font-size: small;
+    font-weight: 500;
+  }
+
+  .work_card {
+    border-radius: 18px;
+  }
+
+  .work_category {
+    font-size: small;
+    padding: 0.19rem 0.625rem;
+  }
+
+  .work_title {
+    top: 2.5rem;
+    left: 1.1rem;
+    font-size: medium;
+    padding: 0 0.625rem;
   }
 }
