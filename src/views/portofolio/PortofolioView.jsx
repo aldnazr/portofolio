@@ -51,25 +51,36 @@ const PortofolioView = () => {
         </span>
         <span
           className={`work_item ${
-            activeCategory === "Web Development" ? "active_tab" : ""
+            activeCategory === "Mobile" ? "active_tab" : ""
           }`}
           onClick={() => {
-            filterItem("Web Development");
-            setActiveCategory("Web Development");
+            filterItem("Mobile");
+            setActiveCategory("Mobile");
           }}
         >
-          Web Development
+          Mobile
         </span>
         <span
           className={`work_item ${
-            activeCategory === "Mobile Application" ? "active_tab" : ""
+            activeCategory === "Web" ? "active_tab" : ""
           }`}
           onClick={() => {
-            filterItem("Mobile Application");
-            setActiveCategory("Mobile Application");
+            filterItem("Web");
+            setActiveCategory("Web");
           }}
         >
-          Mobile Application
+          Web
+        </span>
+        <span
+          className={`work_item ${
+            activeCategory === "Desktop" ? "active_tab" : ""
+          }`}
+          onClick={() => {
+            filterItem("Desktop");
+            setActiveCategory("Desktop");
+          }}
+        >
+          Desktop
         </span>
       </div>
 
