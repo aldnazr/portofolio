@@ -30,7 +30,8 @@
 }
 
 .active_tab {
-  background-color: #1e40af; /* contoh biru gelap */
+  background-color: #1e40af;
+  /* contoh biru gelap */
   color: #e0f2fe;
 }
 
@@ -171,6 +172,7 @@
     font-size: small;
     font-weight: 600;
   }
+
   .work_filters {
     gap: 0.6rem;
   }
@@ -183,12 +185,20 @@
 @media screen and (max-width: 768px) {
   .work_container {
     grid-template-columns: repeat(1, 1fr);
-    gap: 0.8rem;
+    gap: 0.9rem;
+  }
+
+  .work_thumbnail {
+    height: 30vh;
   }
 
   .work_item {
     font-size: small;
     font-weight: 500;
+  }
+
+  .work_filters {
+    gap: 0.4rem;
   }
 
   .work_card {
