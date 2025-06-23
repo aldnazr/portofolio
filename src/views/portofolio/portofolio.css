@@ -3,7 +3,7 @@
   align-items: center;
   flex-wrap: nowrap;
   overflow-x: auto;
-  gap: 10px;
+  gap: 0.6rem;
   margin-bottom: 2.5rem;
   scrollbar-width: thin;
   max-width: 90vw; /* ini penting */
@@ -113,7 +113,7 @@
   font-size: small;
   display: block;
   background-color: #ffd15c;
-  padding: 3px 12px;
+  padding: 4px 12px;
   border-radius: 20px;
   text-align: center;
   transition: 0.3s;
@@ -168,8 +168,7 @@
   }
 
   .work_filters {
-    gap: 0.25rem;
-    margin-left: 0.875rem;
+    gap: 0.3rem;
   }
 
   .work_card {
