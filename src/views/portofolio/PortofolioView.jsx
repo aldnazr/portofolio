@@ -98,7 +98,6 @@ const PortofolioView = () => {
               <span className="work_category">{category} Development</span>
               <h3 className="work_title">{title}</h3>
               <a href={link} className="work_button">
-                {/* <i className="icon-link work_button-icon"></i> */}
                 Repository
               </a>
             </div>
