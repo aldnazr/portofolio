@@ -1,13 +1,28 @@
 import "./portofolio.css";
 import Menu from "./Menu";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Zoom } from "react-awesome-reveal";
 
 const PortofolioView = () => {
   const [items, setItems] = useState(Menu);
   const [activeCategory, setActiveCategory] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 6; // Number of items to display per page
+  const [itemsPerPage, setItemsPerPage] = useState(6);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setItemsPerPage(4); // mobile
+      } else {
+        setItemsPerPage(6); // desktop or tablet
+      }
+    };
+
+    handleResize(); // set initial value
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const filterItem = (categoryItem) => {
     const updateItems = Menu.filter((curElem) => {
