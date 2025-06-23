@@ -33,7 +33,7 @@ const PortofolioView = () => {
   return (
     <section id="porto" className="container section">
       <div>
-        <h2 className="section_title">Recent Works</h2>
+        <h2 className="section_title">Projects</h2>
       </div>
 
       <div className="work_filters">

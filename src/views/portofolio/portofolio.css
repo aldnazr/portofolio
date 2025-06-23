@@ -160,9 +160,9 @@
   }
 } */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .work_container {
-    grid-template-columns: max-content;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     justify-content: center;
   }
@@ -179,7 +179,7 @@
 
 @media screen and (max-width: 640px) {
   .work_container {
-    grid-template-columns: 21rem;
+    grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
     justify-content: center;
   }

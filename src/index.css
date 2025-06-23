@@ -161,6 +161,13 @@ img {
   animation: button-push 0.3s linear 1;
 }
 
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 720px;
+  }
+  
+}
+
 @media screen and (max-width: 768px) {
   .section {
     padding-top: 4rem;
