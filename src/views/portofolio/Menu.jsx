@@ -1,4 +1,4 @@
-import Work1 from "../../assets/klinik_prima.png";
+import Work1 from "../../assets/asclepius.svg";
 import Work2 from "../../assets/route_wise.png";
 import Work3 from "../../assets/resep_masakan.png";
 import Work4 from "../../assets/suwit_jawa.png";
@@ -6,19 +6,6 @@ import Work5 from "../../assets/chat_AI.png";
 import Work6 from "../../assets/portofolio.png";
 import Work7 from "../../assets/appleku.png";
 import Work8 from "../../assets/web_film.png";
-import Work9 from "../../assets/mimin_laundry.jpg";
-import Work10 from "../../assets/go_sport.png";
-import Work11 from "../../assets/pengembangan_web.png";
-import Work12 from "../../assets/ToDoList.png";
-import Work13 from "../../assets/restaurant.png";
-import Work14 from "../../assets/sistem_penggajian.png";
-import Work15 from "../../assets/iconic.png";
-import Work16 from "../../assets/mobile_routewise.png";
-import Work17 from "../../assets/work-3.svg";
-import Work18 from "../../assets/work-2.svg";
-import Work19 from "../../assets/work-6.svg";
-import Work20 from "../../assets/work-5.svg";
-import Work21 from "../../assets/titipsini.png";
 
 const Menu = [
   {

@@ -169,6 +169,7 @@
 
   .work_filters {
     gap: 0.25rem;
+    margin-left: 0.875rem;
   }
 
   .work_card {

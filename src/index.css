@@ -160,3 +160,13 @@ img {
 .button:hover {
   animation: button-push 0.3s linear 1;
 }
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding-top: 4rem;
+  }
+
+  .section_title {
+    margin-bottom: 2rem;
+  }
+}
