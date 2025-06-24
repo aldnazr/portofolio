@@ -43,18 +43,18 @@ const Menu = [
   },
   {
     id: 6,
+    image: Work5,
+    title: "Web Porfolio",
+    category: "Web",
+    link: "https://github.com/aldnazr/portofolio",
+  },
+  {
+    id: 7,
     image:
       "https://raw.githubusercontent.com/aldnazr/ppta/refs/heads/main/preview/3.png",
     title: "PPTA - Layanan Akademik",
     category: "Web",
     link: "https://github.com/aldnazr/",
-  },
-  {
-    id: 7,
-    image: Work5,
-    title: "Web Porfolio",
-    category: "Web",
-    link: "https://github.com/aldnazr/portofolio",
   },
   {
     id: 8,
