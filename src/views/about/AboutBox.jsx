@@ -1,5 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Zoom } from 'react-awesome-reveal';
+import { Zoom } from "react-awesome-reveal";
+import Project from "../portofolio/Menu";
+
 const AboutBox = () => {
   return (
     <div className="about_boxes grid">
@@ -7,32 +9,32 @@ const AboutBox = () => {
         <div className="about_box">
           <i className="about_icon icon-fire"></i>
           <div>
-            <h3 className="about_title">20</h3>
+            <h3 className="about_title">{Project.length}</h3>
             <span className="about_subtitle">Project completed</span>
           </div>
         </div>
 
         <div className="about_box">
-          <i className="about_icon  icon-clock"></i>
+          <i className="about_icon icon-clock"></i>
           <div>
-            <h3 className="about_title">26.280</h3>
-            <span className="about_subtitle">O'clock</span>
+            <h3 className="about_title">1+</h3>
+            <span className="about_subtitle">Years of Experience</span>
           </div>
         </div>
 
         <div className="about_box">
           <i className="about_icon icon-cup"></i>
           <div>
-            <h3 className="about_title">2.345</h3>
-            <span className="about_subtitle">Cup of coffe</span>
+            <h3 className="about_title">16</h3>
+            <span className="about_subtitle">Technologies Used</span>
           </div>
         </div>
 
         <div className="about_box">
           <i className="about_icon icon-people"></i>
           <div>
-            <h3 className="about_title">3</h3>
-            <span className="about_subtitle">Friends on the project</span>
+            <h3 className="about_title">456+</h3>
+            <span className="about_subtitle">Commits</span>
           </div>
         </div>
       </Zoom>

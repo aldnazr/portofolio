@@ -1,11 +1,9 @@
 import Work1 from "../../assets/asclepius.svg";
-import Work2 from "../../assets/route_wise.png";
-import Work3 from "../../assets/resep_masakan.png";
-import Work4 from "../../assets/suwit_jawa.png";
-import Work5 from "../../assets/chat_AI.png";
-import Work6 from "../../assets/portofolio.png";
-import Work7 from "../../assets/appleku.png";
-import Work8 from "../../assets/web_film.png";
+import Work2 from "../../assets/story_app.svg";
+import Work3 from "../../assets/github_user.svg";
+import Work4 from "../../assets/blendit.svg";
+import Work5 from "../../assets/portofolio.png";
+import Work6 from "../../assets/kriptoin.svg";
 
 const Menu = [
   {
@@ -38,29 +36,31 @@ const Menu = [
   },
   {
     id: 5,
-    image: Work5,
+    image:
+      "https://raw.githubusercontent.com/aldnazr/ppta/refs/heads/main/preview/3.png",
     title: "PPTA - Layanan Akademik",
     category: "Web",
     link: "https://github.com/aldnazr/",
   },
   {
     id: 6,
-    image: Work6,
+    image: Work5,
     title: "Web Porfolio",
     category: "Web",
     link: "https://github.com/aldnazr/portofolio",
   },
   {
     id: 7,
-    image: Work7,
+    image:
+      "https://raw.githubusercontent.com/aldnazr/netbeans-transaction/refs/heads/main/preview/2.png",
     title: "Cashier Transaction",
     category: "Desktop",
     link: "https://github.com/aldnazr/",
   },
   {
     id: 8,
-    image: Work8,
-    title: "Fokus Crypto",
+    image: Work6,
+    title: "Kriptoin",
     category: "Mobile",
     link: "https://github.com/aldnazr/",
   },
