@@ -79,12 +79,12 @@
 }
 
 .work_title {
-  color: #fff;
+  color: #fdfdfd;
   font-size: larger;
   margin: 0 0 0.98rem;
   padding: 0 1.25rem;
   position: absolute;
-  top: 3.375rem;
+  top: 37%;
   left: 0.5rem;
   transform: translateY(30px);
   transition: 0.3s;
@@ -106,7 +106,7 @@
 }
 
 .work_button {
-  color: #fff;
+  color: #fcfcfc;
   position: absolute;
   bottom: 1.2rem;
   left: 1.65rem;
@@ -211,9 +211,9 @@
   }
 
   .work_title {
-    top: 2.5rem;
+    top: 37%;
     left: 1.1rem;
     font-size: large;
-    padding: 0 0.625rem;
+    padding: 0 0.625rem 0;
   }
 }
