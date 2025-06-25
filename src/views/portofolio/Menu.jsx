@@ -11,35 +11,35 @@ const Menu = [
     image: Work1,
     title: "Asclepius - Cancer Detection",
     category: "Mobile",
-    link: "https://github.com/aldnazr/",
+    link: "https://github.com/aldnazr/android-tensorflow",
   },
   {
     id: 2,
     image: Work6,
     title: "Kriptoin",
     category: "Mobile",
-    link: "https://github.com/aldnazr/",
+    link: "https://github.com/aldnazr/kriptoin",
   },
   {
     id: 3,
     image: Work4,
     title: "Blendit - Makeup Recommendation",
     category: "Mobile",
-    link: "https://github.com/aldnazr/",
+    link: "https://github.com/aldnazr/blendit-capstone-project",
   },
   {
     id: 4,
     image: Work2,
     title: "Story App",
     category: "Mobile",
-    link: "https://github.com/aldnazr/",
+    link: "https://github.com/aldnazr/android-story-app",
   },
   {
     id: 5,
     image: Work3,
     title: "Github User",
     category: "Mobile",
-    link: "https://github.com/aldnazr/",
+    link: "https://github.com/aldnazr/android-aplikasi-github-user",
   },
   {
     id: 6,
@@ -54,7 +54,7 @@ const Menu = [
       "https://raw.githubusercontent.com/aldnazr/ppta/refs/heads/main/preview/3.png",
     title: "PPTA - Layanan Akademik",
     category: "Web",
-    link: "https://github.com/aldnazr/",
+    link: "https://github.com/aldnazr/ppta",
   },
   {
     id: 8,
@@ -62,7 +62,7 @@ const Menu = [
       "https://raw.githubusercontent.com/aldnazr/netbeans-transaction/refs/heads/main/preview/2.png",
     title: "Cashier Transaction",
     category: "Desktop",
-    link: "https://github.com/aldnazr/",
+    link: "https://github.com/aldnazr/netbeans-transaction",
   },
 ];
 
