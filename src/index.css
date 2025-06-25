@@ -141,7 +141,7 @@ img {
   border-radius: 1.875rem;
   box-shadow: 0 0 1px rgb(0 0 0 / 0%);
   border: 1 px solid transparent;
-  color: #fff;
+  color: #fdfdfd;
   display: inline-block;
   background-color: var(--first-color);
   font-weight: var(--font-bold);
