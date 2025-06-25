@@ -34,7 +34,7 @@ const AboutView = () => {
             <div className="about_skills grid">
               <Slide>
                 <img
-                  src="https://github-readme-stats.vercel.app/api/top-langs/?username=aldnazr&card_width=450"
+                  src="https://github-readme-stats.vercel.app/api/top-langs/?username=aldnazr&card_width=500&border_radius=18"
                   alt="toplanguange"
                 />
               </Slide>
