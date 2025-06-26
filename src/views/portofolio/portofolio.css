@@ -106,19 +106,25 @@
 }
 
 .work_button {
-  color: #fcfcfc;
+  color: rgb(255, 235, 59);
   position: absolute;
   bottom: 1.2rem;
-  left: 1.65rem;
+  left: 1.1rem;
   font-weight: 500;
   font-size: small;
   display: block;
-  background-color: #ffd15c;
+  background-color: transparent;
   padding: 4px 12px;
   border-radius: 20px;
   text-align: center;
   transition: 0.3s;
   opacity: 0;
+}
+
+.work_button:hover {
+  left: 1.65rem;
+  background-color: rgb(255, 235, 59);
+  color: rgb(66, 66, 66);
 }
 
 .work_card:hover .work_button {
