@@ -21,7 +21,7 @@ const AboutView = () => {
                   I have expertise in software development, focusing on mobile
                   and web applications. I'm experienced in building responsive
                   user interfaces and writing clean, maintainable code using
-                  modern frameworks like React and Flutter.
+                  modern frameworks like React, Flutter and Laravel.
                 </p>
                 <OpenLinkButtonComponent
                   className="button"
