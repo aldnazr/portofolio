@@ -13,7 +13,7 @@ const AboutView = () => {
           <h2 className="section_title">About Me</h2>
         </div>
 
-        <div className="about_container ">
+        <div className="about_container">
           <div className="about_data grid">
             <Fade>
               <div className="about_info">
