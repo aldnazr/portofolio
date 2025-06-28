@@ -24,7 +24,7 @@ const HomeView = () => {
           </Fade>
           <Slide>
             <a
-              href="mailto:alauddinazhary05@gmail.com?subject=Hiring%20Opportunity&body=Hello%20Azhar%2C%20I%27d%20like%20to%20discuss%20a%20project%20with%20you."
+              href="mailto:alauddinazhary05@gmail.com?subject=Hiring%20Opportunity&body=Hello%2C%20I%27d%20like%20to%20discuss%20a%20project%20with%20you."
               className="button"
             >
               Hire Me
