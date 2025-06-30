@@ -59,7 +59,6 @@ html {
 }
 
 body,
-button,
 input,
 textarea {
   font-family: var(--body-font);
@@ -136,15 +135,16 @@ img {
 }
 
 .button {
-  padding: 0.75rem 2rem;
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
   line-height: 1;
   border-radius: 1.875rem;
   box-shadow: 0 0 1px rgb(0 0 0 / 0%);
   border: 1 px solid transparent;
   color: #fdfdfd;
-  display: inline-block;
   background-color: var(--first-color);
-  font-weight: var(--font-bold);
+  font-size: small;
+  font-weight: var(--font-semibold);
 }
 
 @keyframes button-push {
@@ -165,6 +165,12 @@ img {
 @media screen and (max-width: 1024px) {
   .container {
     max-width: 720px;
+  }
+
+  .button {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
   }
 
 }
