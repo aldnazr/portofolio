@@ -18,10 +18,10 @@ const AboutView = () => {
             <Fade>
               <div className="about_info">
                 <p className="about_description">
-                  I have expertise in software development, focusing on mobile
-                  and web applications. I'm experienced in building responsive
-                  user interfaces and writing clean, maintainable code using
-                  modern frameworks like React, Flutter and Laravel.
+                  I have experience in mobile and web application development,
+                  focusing on building responsive user interfaces and writing
+                  clean, maintainable code using modern frameworks such as
+                  React, Flutter, and Laravel.
                 </p>
                 <OpenLinkButtonComponent
                   className="button"
