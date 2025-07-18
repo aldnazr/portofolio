@@ -133,6 +133,7 @@
   .about_data {
     grid-template-columns: 1fr;
     row-gap: 1.875rem;
+    justify-items: center;
   }
 
   .about_boxes {
@@ -146,6 +147,7 @@
     text-align: left;
   }
 }
+
 /* 
 @media screen and (max-width: 576px) {
   .about_container {
