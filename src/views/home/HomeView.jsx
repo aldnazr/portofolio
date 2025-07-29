@@ -8,8 +8,26 @@ import AbilityView from "../ability/AbilityView";
 import ResumeView from "../resume/ResumeView";
 import PortofolioView from "../portofolio/PortofolioView";
 import { Fade, Slide } from "react-awesome-reveal";
+import React, { useState, useEffect } from "react";
 
 const HomeView = () => {
+  const jobs = ["Mobile App Developer", "Web Developer"];
+
+  const [index, setIndex] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setVisible(false); // Mulai fade out
+      setTimeout(() => {
+        setIndex((prevIndex) => (prevIndex + 1) % jobs.length);
+        setVisible(true); // Fade in teks baru
+      }, 500); // Sesuaikan dengan durasi fade out
+    }, 3000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <>
       <section id="home" className="home container">
@@ -19,7 +37,13 @@ const HomeView = () => {
               <img src={Profil} alt="" className="home_img" />
             </div>
             <h1 className="home_name">Muhammad Alauddin Azhary</h1>
-            <span className="home_education">Software Developer</span>
+            <span
+              className={`home_education transition-opacity duration-500 ${
+                visible ? "opacity-100" : "opacity-0"
+              }`}
+            >
+              {jobs[index]}
+            </span>
             <SocialView />
           </Fade>
           <Slide>

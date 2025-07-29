@@ -6,6 +6,10 @@
   justify-content: center;
 }
 
+.job_name {
+  transition: opacity 0.5s ease-in-out;
+}
+
 .intro {
   max-width: 540px;
   text-align: center;
@@ -30,6 +34,7 @@
 }
 
 .home_name {
+  margin-top: 0.8rem;
   font-size: var(--h1-font-size);
   font-weight: var(--font-bold);
   margin-bottom: 0.5rem;
