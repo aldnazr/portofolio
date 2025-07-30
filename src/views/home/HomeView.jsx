@@ -12,21 +12,30 @@ import React, { useState, useEffect } from "react";
 
 const HomeView = () => {
   const jobs = ["Mobile App Developer", "Web Developer"];
-
-  const [index, setIndex] = useState(0);
-  const [visible, setVisible] = useState(true);
+  const [jobIndex, setJobIndex] = useState(0);
+  const [displayedText, setDisplayedText] = useState("");
+  const [charIndex, setCharIndex] = useState(0);
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      setVisible(false); // Mulai fade out
-      setTimeout(() => {
-        setIndex((prevIndex) => (prevIndex + 1) % jobs.length);
-        setVisible(true); // Fade in teks baru
-      }, 500); // Sesuaikan dengan durasi fade out
-    }, 3000);
+    const currentJob = jobs[jobIndex];
+    if (charIndex < currentJob.length) {
+      const timeoutId = setTimeout(() => {
+        setDisplayedText((prev) => prev + currentJob[charIndex]);
+        setCharIndex(charIndex + 1);
+      }, 100); // kecepatan mengetik per karakter
 
-    return () => clearInterval(intervalId);
-  }, []);
+      return () => clearTimeout(timeoutId);
+    } else {
+      // Setelah selesai mengetik, tunggu 2 detik lalu ganti ke job berikutnya
+      const holdTime = setTimeout(() => {
+        setDisplayedText("");
+        setCharIndex(0);
+        setJobIndex((prev) => (prev + 1) % jobs.length);
+      }, 2000); // waktu tunggu sebelum mengganti kata
+
+      return () => clearTimeout(holdTime);
+    }
+  }, [charIndex, jobIndex, jobs]);
 
   return (
     <>
@@ -37,12 +46,8 @@ const HomeView = () => {
               <img src={Profil} alt="" className="home_img" />
             </div>
             <h1 className="home_name">Muhammad Alauddin Azhary</h1>
-            <span
-              className={`home_education transition-opacity duration-500 ${
-                visible ? "opacity-100" : "opacity-0"
-              }`}
-            >
-              {jobs[index]}
+            <span className={`home_education typing-cursor`}>
+              {displayedText}
             </span>
             <SocialView />
           </Fade>
