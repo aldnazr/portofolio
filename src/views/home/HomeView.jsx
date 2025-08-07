@@ -11,7 +11,7 @@ import { Fade, Slide } from "react-awesome-reveal";
 import React, { useState, useEffect } from "react";
 
 const HomeView = () => {
-  const jobs = ["Mobile App Developer", "Web Developer"];
+  const jobs = ["Mobile Developer", "Web Developer"];
   const [jobIndex, setJobIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
   const [charIndex, setCharIndex] = useState(0);
