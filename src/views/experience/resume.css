@@ -54,13 +54,21 @@
 
 @media screen and (max-width: 1024px) {
   .resume_container {
-    grid-template-columns: calc(100% - 2.5rem);
+    grid-template-columns: calc(100% - 8.5rem);
     justify-content: center;
     row-gap: 1.875rem;
   }
 
   .timeline_item::before {
     left: 2px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .resume_container {
+    grid-template-columns: calc(100% - 1rem);
+    justify-content: center;
+    row-gap: 1.875rem;
   }
 }
 
