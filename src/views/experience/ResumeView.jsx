@@ -1,7 +1,6 @@
 import "./resume.css";
 import Data from "./ResumeModel";
 import Card from "./Card";
-import { Fade } from "react-awesome-reveal";
 
 const ResumeView = () => {
   return (

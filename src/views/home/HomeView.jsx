@@ -4,11 +4,11 @@ import SocialView from "./SocialView";
 import ScrollDown from "./ScrollDown";
 import ShapesComponent from "../../components/shapes/ShapesComponent";
 import AboutView from "../about/AboutView";
-import AbilityView from "../ability/AbilityView";
-import ResumeView from "../resume/ResumeView";
-import PortofolioView from "../portofolio/PortofolioView";
+import AbilityView from "../skill/AbilityView";
+import ResumeView from "../experience/ResumeView";
+import PortofolioView from "../project/PortofolioView";
 import { Fade, Slide } from "react-awesome-reveal";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const HomeView = () => {
   const jobs = ["Mobile Developer", "Web Developer"];

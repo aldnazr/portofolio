@@ -2,9 +2,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SidebarComponent from "./components/sidebar/SidebarComponent";
 import AboutView from "./views/about/AboutView";
 import HomeView from "./views/home/HomeView";
-import PortofolioView from "./views/portofolio/PortofolioView";
-import ResumeView from "./views/resume/ResumeView";
-import AbilityView from "./views/ability/AbilityView";
+import PortofolioView from "./views/project/PortofolioView";
+import ResumeView from "./views/experience/ResumeView";
+import AbilityView from "./views/skill/AbilityView";
 import "./App.css";
 
 function App() {
