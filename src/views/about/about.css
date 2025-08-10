@@ -87,7 +87,6 @@
 
 @media screen and (max-width: 1024px) {
   .about_container {
-    grid-template-columns: 720px;
     justify-content: center;
     row-gap: 1.875rem;
   }
@@ -123,7 +122,8 @@
 
 @media screen and (max-width: 768px) {
   .about_container {
-    grid-template-columns: 350px;
+    max-width: calc(100% - 1rem);
+    justify-self: center;
   }
 
   .about_data::before {
