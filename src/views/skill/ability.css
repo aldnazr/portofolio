@@ -76,7 +76,7 @@
 
 @media screen and (max-width: 768px) {
   .ability_card {
-    max-width: calc(100% - 8rem);
+    max-width: calc(100% - 3rem);
   }
 
   .ability_img {
