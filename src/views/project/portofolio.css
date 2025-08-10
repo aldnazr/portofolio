@@ -155,18 +155,6 @@
   background-color: #ddd;
 }
 
-/* @media screen and (max-width: 1024px) {
-  .work_filters {
-    justify-content: center;
-  }
-
-  .work_container {
-    grid-template-columns: repeat(2, 330px);
-    justify-content: center;
-    row-gap: 1.875rem;
-  }
-} */
-
 @media screen and (max-width: 1024px) {
   .work_container {
     grid-template-columns: repeat(2, 1fr);
@@ -192,6 +180,8 @@
   .work_container {
     grid-template-columns: repeat(1, 1fr);
     gap: 0.9rem;
+    max-width: calc(100% - 0.75rem);
+    justify-self: center;
   }
 
   .work_thumbnail {
