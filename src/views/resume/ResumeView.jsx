@@ -1,7 +1,7 @@
-import './resume.css';
-import Data from './Data';
-import Card from './Card';
-import { Fade } from 'react-awesome-reveal';
+import "./resume.css";
+import Data from "./ResumeModel";
+import Card from "./Card";
+import { Fade } from "react-awesome-reveal";
 
 const ResumeView = () => {
   return (
@@ -13,7 +13,15 @@ const ResumeView = () => {
       <div className="resume_container grid">
         <div className="timeline grid">
           {Data.map((val, id) => {
-            return <Card key={id} icon={val.icon} title={val.title} year={val.year} desc={val.desc} />;
+            return (
+              <Card
+                key={id}
+                icon={val.icon}
+                title={val.title}
+                year={val.year}
+                desc={val.desc}
+              />
+            );
           })}
         </div>
       </div>
