@@ -1,12 +1,12 @@
-import "./ability.css";
-import data from "./AbilityModel";
+import "./skill.css";
+import data from "./SkillModel";
 import { Bounce } from "react-awesome-reveal";
 
-const AbilityView = () => {
+const SkillView = () => {
   return (
     <section id="ability" className="ability container section">
       <div>
-        <h2 className="section_title">Skill</h2>
+        <h2 className="section_title">Skills</h2>
       </div>
 
       <div className="ability_container">
@@ -26,4 +26,4 @@ const AbilityView = () => {
   );
 };
 
-export default AbilityView;
+export default SkillView;

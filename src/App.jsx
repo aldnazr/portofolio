@@ -4,7 +4,7 @@ import AboutView from "./views/about/AboutView";
 import HomeView from "./views/home/HomeView";
 import PortofolioView from "./views/project/PortofolioView";
 import ResumeView from "./views/experience/ResumeView";
-import AbilityView from "./views/skill/AbilityView";
+import SkillView from "./views/skill/SkillView";
 import "./App.css";
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
             <Route path="about" element={<AboutView />} />
             <Route path="porto" element={<PortofolioView />} />
             <Route path="resume" element={<ResumeView />} />
-            <Route path="ability" element={<AbilityView />} />
+            <Route path="ability" element={<SkillView />} />
           </Routes>
         </div>
       </div>

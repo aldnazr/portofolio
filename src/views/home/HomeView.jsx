@@ -4,7 +4,7 @@ import SocialView from "./SocialView";
 import ScrollDown from "./ScrollDown";
 import ShapesComponent from "../../components/shapes/ShapesComponent";
 import AboutView from "../about/AboutView";
-import AbilityView from "../skill/AbilityView";
+import SkillView from "../skill/SkillView";
 import ResumeView from "../experience/ResumeView";
 import PortofolioView from "../project/PortofolioView";
 import { Fade, Slide } from "react-awesome-reveal";
@@ -22,16 +22,15 @@ const HomeView = () => {
       const timeoutId = setTimeout(() => {
         setDisplayedText((prev) => prev + currentJob[charIndex]);
         setCharIndex(charIndex + 1);
-      }, 100); // kecepatan mengetik per karakter
+      }, 100);
 
       return () => clearTimeout(timeoutId);
     } else {
-      // Setelah selesai mengetik, tunggu 2 detik lalu ganti ke job berikutnya
       const holdTime = setTimeout(() => {
         setDisplayedText("");
         setCharIndex(0);
         setJobIndex((prev) => (prev + 1) % jobs.length);
-      }, 2000); // waktu tunggu sebelum mengganti kata
+      }, 2000);
 
       return () => clearTimeout(holdTime);
     }
@@ -64,7 +63,7 @@ const HomeView = () => {
         <ShapesComponent />
       </section>
       <AboutView />
-      <AbilityView />
+      <SkillView />
       <ResumeView />
       <PortofolioView />
     </>
