@@ -1,5 +1,5 @@
 import "./home.css";
-import Profil from "../../assets/hero.png";
+import Profil from "../../assets/hero.jpg";
 import SocialView from "./SocialView";
 import ScrollDown from "./ScrollDown";
 import ShapesComponent from "../../components/shapes/ShapesComponent";
