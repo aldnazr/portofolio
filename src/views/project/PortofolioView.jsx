@@ -1,5 +1,5 @@
 import "./portofolio.css";
-import Menu from "./Menu";
+import Menu from "./PortofolioModel";
 import { useState, useEffect } from "react";
 import { Zoom } from "react-awesome-reveal";
 

@@ -64,6 +64,14 @@ const Menu = [
     category: "Desktop",
     link: "https://github.com/aldnazr/netbeans-transaction",
   },
+  {
+    id: 9,
+    image:
+      "https://raw.githubusercontent.com/aldnazr/exchange-converter/refs/heads/main/preview/1.png",
+    title: "Exchange Converter",
+    category: "Web",
+    link: "https://github.com/aldnazr/exchange-converter",
+  },
 ];
 
 export default Menu;

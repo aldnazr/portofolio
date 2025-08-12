@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Zoom } from "react-awesome-reveal";
-import Project from "../project/Menu";
+import Project from "../project/PortofolioModel";
 
 const AboutBox = () => {
   return (
