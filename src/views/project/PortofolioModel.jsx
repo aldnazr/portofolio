@@ -25,7 +25,7 @@ const Menu = [
     image: Blendit,
     title: "Blendit - Makeup Recommendation",
     category: "Mobile",
-    link: "https://github.com/aldnazr/blendit-capstone-project",
+    link: "https://github.com/aldnazr/bangkit-capstone",
   },
   {
     id: 4,
