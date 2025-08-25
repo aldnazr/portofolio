@@ -72,6 +72,14 @@ const Menu = [
     category: "Web",
     link: "https://github.com/aldnazr/exchange-converter",
   },
+  {
+    id: 10,
+    image:
+      "https://raw.githubusercontent.com/aldnazr/phone-store/refs/heads/main/preview/1.png",
+    title: "Phone Store",
+    category: "Web",
+    link: "https://github.com/aldnazr/phone-store",
+  },
 ];
 
 export default Menu;
