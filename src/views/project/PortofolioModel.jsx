@@ -16,7 +16,7 @@ const Menu = [
   {
     id: 2,
     image: Kriptoin,
-    title: "Kriptoin",
+    title: "Vault Chain - Track Cryptocurrency",
     category: "Mobile",
     link: "https://github.com/aldnazr/kriptoin",
   },
