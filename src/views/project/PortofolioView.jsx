@@ -120,8 +120,8 @@ const PortofolioView = () => {
                 <a className="work_button" href={link}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="22"
-                    height="22"
+                    width="18"
+                    height="18"
                     fill="currentColor"
                     viewBox="0 0 16 16"
                   >
