@@ -67,7 +67,7 @@
   top: 0;
   height: 100%;
   width: 100%;
-  transition: 0.3s;
+  transition: 0.2s;
   opacity: 0;
 }
 
@@ -215,6 +215,6 @@
   }
 
   .work_title {
-    font-size: large;
+    font-size: larger;
   }
 }
