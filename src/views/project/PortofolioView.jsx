@@ -117,7 +117,12 @@ const PortofolioView = () => {
               <div className="work_group">
                 <span className="work_category">{category} Development</span>
                 <h3 className="work_title">{title}</h3>
-                <a className="work_button" href={link}>
+                <a
+                  className="work_button"
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="18"
