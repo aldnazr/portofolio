@@ -4,6 +4,7 @@ import GithubUsers from "../../assets/github_users.svg";
 import Blendit from "../../assets/blendit.svg";
 import Portofolio from "../../assets/portofolio.png";
 import Kriptoin from "../../assets/kriptoin.svg";
+import Interpol from "../../assets/interpol.png";
 
 const Menu = [
   {
@@ -18,7 +19,7 @@ const Menu = [
     image: Kriptoin,
     title: "Vault Chain - Track Cryptocurrency",
     category: "Mobile",
-    link: "https://github.com/aldnazr/kriptoin",
+    link: "https://github.com/aldnazr/vault-chain",
   },
   {
     id: 3,
@@ -79,6 +80,14 @@ const Menu = [
     title: "Phone Store",
     category: "Web",
     link: "https://github.com/aldnazr/phone-store",
+  },
+  {
+    id: 11,
+    image:
+      "https://raw.githubusercontent.com/aldnazr/interpol/refs/heads/master/preview/1.png",
+    title: "Interpol",
+    category: "Web",
+    link: "https://github.com/aldnazr/interpol",
   },
 ];
 
