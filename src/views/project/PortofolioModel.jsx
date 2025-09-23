@@ -1,10 +1,9 @@
 import Asclepius from "../../assets/asclepius.svg";
-import StoryApp from "../../assets/story_app.svg";
-import GithubUsers from "../../assets/github_users.svg";
 import Blendit from "../../assets/blendit.svg";
-import Portofolio from "../../assets/portofolio.png";
+import GithubUsers from "../../assets/github_users.svg";
 import Kriptoin from "../../assets/kriptoin.svg";
-import Interpol from "../../assets/interpol.png";
+import Portofolio from "../../assets/portofolio.png";
+import StoryApp from "../../assets/story_app.svg";
 
 const Menu = [
   {
