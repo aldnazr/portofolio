@@ -20,8 +20,8 @@ const AboutView = () => {
                 <p className="about_description">
                   I have experience in mobile and web application development,
                   focusing on building responsive user interfaces and writing
-                  clean, maintainable code using modern frameworks such as
-                  React, Flutter, and Laravel.
+                  clean, maintainable code using modern frameworks such as Next,
+                  Flutter, and Laravel.
                 </p>
                 <OpenLinkButtonComponent
                   className="button"
