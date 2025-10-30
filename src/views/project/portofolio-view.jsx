@@ -1,13 +1,8 @@
 import "./portofolio.css";
-import { useState, useEffect, Suspense } from "react";
-import { Zoom } from "react-awesome-reveal";
+import { useState, useEffect } from "react";
+import { Fade } from "react-awesome-reveal";
 import { Menu } from "./portofolio-model";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import {
-  ImageWithSkeleton,
-  ShimmerSkeleton,
-  Skeleton,
-} from "../../components/skeleton/skeleton";
+import { ImageWithSkeleton } from "../../components/skeleton/skeleton";
 
 export default function PortofolioView() {
   const [items, setItems] = useState(Menu);
@@ -106,20 +101,20 @@ export default function PortofolioView() {
       </div>
 
       <div className="work_container grid">
-        {currentItems.map((elem) => {
-          const { id, image, title, category, link } = elem;
+        {currentItems.map((element) => {
+          const { id, image, title, category, link } = element;
           return (
             <div className="work_card" key={id}>
-              <Zoom>
+              <Fade duration={1200}>
                 <div className="work_thumbnail">
                   <ImageWithSkeleton
                     src={image}
-                    alt={"pict"}
+                    alt={title}
                     className="work_img"
                   />
-                  <div className="work_mask"></div>
+                  <div className="work_mask" />
                 </div>
-              </Zoom>
+              </Fade>
               <div className="work_group">
                 <span className="work_category">{category} Development</span>
                 <h3 className="work_title">{title}</h3>
