@@ -7,10 +7,11 @@
 /* ===== Variables CSS ===== */
 :root {
   /* ===== Colors ===== */
-  --first-color: hsl(353, 100%, 65%);
+  --first-color: oklch(64.5% 0.246 16.439);
   --title-color: hsl(244, 24%, 26%);
   --text-color: hsl(244, 16%, 43%);
   --body-color: hsl(258, 60%, 98%);
+  --hover-color: oklch(88.35% 0.04093 0.54);
   --container-color: #fff;
 
   /* ===== Font and Typography ===== */
@@ -32,7 +33,7 @@
   --shadow: 0px 5px 20px 0px rgb(69 67 96 / 10%);
 
   /* ===== Border Radius ===== */
-  --border-radius: 20px;
+  --border-radius: 18px;
 }
 
 /* ===== Responsive Typography ===== */
@@ -102,8 +103,7 @@ img {
 /* ===== Reusable Css Classes ===== */
 .container {
   max-width: 1080px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -147,19 +147,8 @@ img {
   font-weight: var(--font-semibold);
 }
 
-@keyframes button-push {
-  50% {
-    transform: scale(0.8);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
 .button:hover {
-  transform: scale(0.95);
-  transition: transform 0.3s ease-in-out;
+  background-color: var(--hover-color);
 }
 
 @media screen and (max-width: 1024px) {

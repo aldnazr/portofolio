@@ -1,14 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
 import "./about.css";
 import AboutBox from "./AboutBox";
-import OpenLinkButtonComponent from "../../components/button/OpenLinkButtonComponent";
 import { Slide, Fade } from "react-awesome-reveal";
 import CV from "../../assets/cv.pdf";
+import ButtonOpenLink from "../../components/button/ButtonOpenLink";
 
 const AboutView = () => {
   return (
     <div>
-      <section id="about" className="about container section">
+      <section id="about" className="container section">
         <div>
           <h2 className="section_title">About Me</h2>
         </div>
@@ -23,7 +23,7 @@ const AboutView = () => {
                   clean, maintainable code using modern frameworks such as Next,
                   Flutter, and Laravel.
                 </p>
-                <OpenLinkButtonComponent
+                <ButtonOpenLink
                   className="button"
                   redirect={CV}
                   text="Download CV"
