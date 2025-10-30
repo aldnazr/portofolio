@@ -17,7 +17,7 @@
   cursor: pointer;
   font-weight: 500;
   transition: background-color 0.3s, color 0.3s;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
   padding: 6px 16px;
   display: inline-block;
   text-align: center;
