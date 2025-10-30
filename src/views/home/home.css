@@ -53,7 +53,7 @@
 }
 
 .home_social-link:hover {
-  color: hsl(43, 100%, 68%);
+  color: oklch(45.7% 0.24 277.023);
 }
 
 .scroll_down {

@@ -1,11 +1,11 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import SidebarComponent from "./components/sidebar/SidebarComponent";
-import AboutView from "./views/about/AboutView";
-import HomeView from "./views/home/HomeView";
-import ResumeView from "./views/experience/ResumeView";
-import SkillView from "./views/skill/SkillView";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import { Sidebar } from "./components/sidebar/SidebarComponent";
+import AboutView from "./views/about/AboutView";
+import ResumeView from "./views/experience/ResumeView";
+import HomeView from "./views/home/HomeView";
 import PortofolioView from "./views/project/portofolio-view";
+import SkillView from "./views/skill/SkillView";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <div className="flex max-h-screen">
         {/* Sidebar (1/12) */}
         <div className="sidebar">
-          <SidebarComponent />
+          <Sidebar />
         </div>
 
         {/* Content (11/12) */}

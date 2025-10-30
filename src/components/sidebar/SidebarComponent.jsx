@@ -1,10 +1,11 @@
-import { Outlet, Link } from "react-router-dom";
-import AnchorLink from "react-anchor-link-smooth-scroll";
-import "./sidebar.css";
 import { useState } from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import { Outlet } from "react-router-dom";
+import "./sidebar.css";
 
-const SidebarComponent = () => {
-  const [toggle, showMenu] = useState(false);
+export const Sidebar = () => {
+  const [toggle, setToggle] = useState(false);
+  const yearNow = new Date().getFullYear();
 
   return (
     <>
@@ -47,19 +48,17 @@ const SidebarComponent = () => {
           </div>
         </nav>
         <div className="nav_footer">
-          <span className="copyright">&copy; 2024 - 2025.</span>
+          <span className="copyright">&copy; {yearNow}</span>
         </div>
         <Outlet />
       </aside>
 
       <div
         className={toggle ? "nav_toggle nav_toggle-open" : "nav_toggle"}
-        onClick={() => showMenu(!toggle)}
+        onClick={() => setToggle(!toggle)}
       >
         <i className="icon-menu"></i>
       </div>
     </>
   );
 };
-
-export default SidebarComponent;
