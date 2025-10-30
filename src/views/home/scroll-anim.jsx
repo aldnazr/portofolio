@@ -1,4 +1,4 @@
-const ScrollDown = () => {
+export function ScrollAnimation() {
   return (
     <div className="scroll_down">
       <span className="home_scroll-name">Scroll</span>
@@ -7,6 +7,4 @@ const ScrollDown = () => {
       </span>
     </div>
   );
-};
-
-export default ScrollDown;
+}

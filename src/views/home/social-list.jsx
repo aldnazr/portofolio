@@ -1,13 +1,19 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-const SocialView = () => {
+export const SocialList = () => {
   return (
     <div className="home_socials">
-      <Link to="https://www.instagram.com/aldnazr/" className="home_social-link">
+      <Link
+        to="https://www.instagram.com/aldnazr/"
+        className="home_social-link"
+      >
         <i className="fa-brands fa-instagram"></i>
       </Link>
 
-      <Link to="https://www.linkedin.com/in/aldnazr/" className="home_social-link">
+      <Link
+        to="https://www.linkedin.com/in/aldnazr/"
+        className="home_social-link"
+      >
         <i className="fa-brands fa-linkedin"></i>
       </Link>
 
@@ -17,5 +23,3 @@ const SocialView = () => {
     </div>
   );
 };
-
-export default SocialView;

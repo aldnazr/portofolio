@@ -1,16 +1,16 @@
-import "./home.css";
+import { useEffect, useState } from "react";
+import { Fade, Slide } from "react-awesome-reveal";
 import Profil from "../../assets/hero.jpg";
-import SocialView from "./SocialView";
-import ScrollDown from "./ScrollDown";
 import ShapesComponent from "../../components/shapes/ShapesComponent";
 import AboutView from "../about/AboutView";
-import SkillView from "../skill/SkillView";
 import ResumeView from "../experience/ResumeView";
-import PortofolioView from "../project/PortofolioView";
-import { Fade, Slide } from "react-awesome-reveal";
-import { useState, useEffect } from "react";
+import PortofolioView from "../project/portofolio-view";
+import SkillView from "../skill/SkillView";
+import "./home.css";
+import { ScrollAnimation } from "./scroll-anim";
+import { SocialList } from "./social-list";
 
-const HomeView = () => {
+export default function HomeView() {
   const jobs = ["Mobile Developer", "Web Developer"];
   const [jobIndex, setJobIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
@@ -48,7 +48,7 @@ const HomeView = () => {
             <span className={`home_education typing-cursor`}>
               {displayedText}
             </span>
-            <SocialView />
+            <SocialList />
           </Fade>
           <Slide>
             <a
@@ -58,7 +58,7 @@ const HomeView = () => {
               Hire Me
             </a>
           </Slide>
-          <ScrollDown />
+          <ScrollAnimation />
         </div>
         <ShapesComponent />
       </section>
@@ -68,6 +68,4 @@ const HomeView = () => {
       <PortofolioView />
     </>
   );
-};
-
-export default HomeView;
+}

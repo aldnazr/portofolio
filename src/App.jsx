@@ -2,10 +2,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SidebarComponent from "./components/sidebar/SidebarComponent";
 import AboutView from "./views/about/AboutView";
 import HomeView from "./views/home/HomeView";
-import PortofolioView from "./views/project/PortofolioView";
 import ResumeView from "./views/experience/ResumeView";
 import SkillView from "./views/skill/SkillView";
 import "./App.css";
+import PortofolioView from "./views/project/portofolio-view";
 
 function App() {
   return (
