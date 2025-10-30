@@ -13,15 +13,15 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
-    "@formspree/react": "^2.5.1",
+    "@formspree/react": "^3.0.0",
     "@tailwindcss/vite": "^4.1.10",
     "axios": "^1.6.8",
-    "react": "^18.2.0",
+    "react": "^19.2.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-awesome-reveal": "^4.2.12",
-    "react-dom": "^18.2.0",
+    "react-dom": "^19.2.0",
     "react-lazy-load-image-component": "^1.6.3",
-    "react-router-dom": "^6.23.0",
+    "react-router-dom": "^6.30.1",
     "sweetalert2": "^11.10.8"
   },
   "devDependencies": {
@@ -38,6 +38,6 @@
     "globals": "^15.1.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.10",
-    "vite": "^5.4.19"
+    "vite": "^7.1.12"
   }
 }

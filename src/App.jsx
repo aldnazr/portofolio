@@ -9,7 +9,9 @@ import SkillView from "./views/skill/SkillView";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter
+      future={{ v7_relativeSplatPath: true, v7_startTransition: true }}
+    >
       <div className="flex max-h-screen">
         {/* Sidebar (1/12) */}
         <div className="sidebar">
