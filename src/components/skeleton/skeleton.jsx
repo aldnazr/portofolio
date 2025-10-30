@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 function Skeleton({ width = "100%", height = "300px", className = "" }) {
   return (
     <div
@@ -45,4 +47,22 @@ function ShimmerSkeleton({ width = "100%", height = "300px", className = "" }) {
   );
 }
 
-export { Skeleton, ShimmerSkeleton };
+function ImageWithSkeleton({ src, alt, className = "" }) {
+  const [loaded, setLoaded] = useState(false);
+
+  return (
+    <div className="relative">
+      {!loaded && (
+        <div className="absolute inset-0 bg-gray-300 animate-pulse" />
+      )}
+      <img
+        src={src}
+        alt={alt}
+        onLoad={() => setLoaded(true)}
+        className={`${className} ${loaded ? "opacity-100" : "opacity-0"}`}
+      />
+    </div>
+  );
+}
+
+export { Skeleton, ShimmerSkeleton, ImageWithSkeleton };

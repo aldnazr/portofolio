@@ -3,7 +3,11 @@ import { useState, useEffect, Suspense } from "react";
 import { Zoom } from "react-awesome-reveal";
 import { Menu } from "./portofolio-model";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { ShimmerSkeleton, Skeleton } from "../../components/skeleton/skeleton";
+import {
+  ImageWithSkeleton,
+  ShimmerSkeleton,
+  Skeleton,
+} from "../../components/skeleton/skeleton";
 
 export default function PortofolioView() {
   const [items, setItems] = useState(Menu);
@@ -108,10 +112,10 @@ export default function PortofolioView() {
             <div className="work_card" key={id}>
               <Zoom>
                 <div className="work_thumbnail">
-                  <LazyLoadImage
+                  <ImageWithSkeleton
                     src={image}
+                    alt={"pict"}
                     className="work_img"
-                    placeholder={<Skeleton height="100%" width="100%" />}
                   />
                   <div className="work_mask"></div>
                 </div>
