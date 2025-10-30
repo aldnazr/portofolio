@@ -5,7 +5,7 @@ import Kriptoin from "../../assets/kriptoin.svg";
 import Portofolio from "../../assets/portofolio.png";
 import StoryApp from "../../assets/story_app.svg";
 
-const Menu = [
+export const Menu = [
   {
     id: 1,
     image: Asclepius,
@@ -89,5 +89,3 @@ const Menu = [
     link: "https://github.com/aldnazr/interpol",
   },
 ];
-
-export default Menu;

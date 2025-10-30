@@ -1,17 +1,13 @@
 import "./portofolio.css";
-import Menu from "./PortofolioModel";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { Zoom } from "react-awesome-reveal";
+import { Menu } from "./PortofolioModel";
 
 const PortofolioView = () => {
   const [items, setItems] = useState(Menu);
   const [activeCategory, setActiveCategory] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(6);
-
-  const handleClick = () => {
-    alert("Div diklik!");
-  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -34,7 +30,7 @@ const PortofolioView = () => {
     });
     setItems(updateItems);
     setCurrentPage(1); // Reset to the first page when filtering
-    setActiveCategory("All");
+    setActiveCategory(categoryItem);
   };
 
   // Calculate the indices for the current page items
