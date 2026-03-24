@@ -29,14 +29,6 @@ const AboutBox = () => {
             <span className="about_subtitle">Technologies Used</span>
           </div>
         </div>
-
-        <div className="about_box">
-          <i className="about_icon icon-people"></i>
-          <div>
-            <h3 className="about_title">456+</h3>
-            <span className="about_subtitle">Commits</span>
-          </div>
-        </div>
       </Zoom>
     </div>
   );

@@ -1,6 +1,12 @@
 const data = [
   {
-    id: 1,
+    category: "education",
+    icon: "icon-graduation",
+    year: "Oct 2025 - Present",
+    title: "PT. Shidiq Membangun Indonesia",
+    desc: "As a front end and mobile developer",
+  },
+  {
     category: "education",
     icon: "icon-graduation",
     year: "Aug 2024 - Feb 2025",
@@ -8,7 +14,6 @@ const data = [
     desc: "Revamping the Academic Final Project Service Center Website as part of my undergraduate thesis project.",
   },
   {
-    id: 2,
     category: "education",
     icon: "icon-graduation",
     year: "Feb 2024 - Jun 2024",
@@ -16,7 +21,6 @@ const data = [
     desc: "Bangkit Academy is an exclusive technology talent academy program led by Google, GoTo, and Traveloka, and is one of the official programs under Kampus Merdeka (MSIB).",
   },
   {
-    id: 3,
     category: "education",
     icon: "icon-graduation",
     year: "Feb 2023 - Jun 2023",

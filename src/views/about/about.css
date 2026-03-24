@@ -66,8 +66,7 @@
 }
 
 .about_boxes {
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 1.875rem;
+  grid-template-columns: repeat(3, 1fr);
   margin-top: 4.35rem;
 }
 
